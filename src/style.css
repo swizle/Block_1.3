@@ -1,0 +1,164 @@
+@font-face {
+    font-family: TT Lakes;
+    src: url('TTLakes-Regular.ttf');
+}
+
+.body {
+    margin: 0;
+    font-family: "TT Lakes", serif;
+}
+
+.top-nav {
+    height: 88px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-nav__div_left {
+    display: flex;
+    align-items: center;
+}
+
+.top-nav__div_right {
+    display: flex;
+    align-items: center;
+}
+
+.top-nav__div {
+    width: 40px;
+    height: 40px;
+    background-color: #FF3E79;
+    border-radius: 50%;
+    margin-right: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-nav__div:first-child {
+    margin-left: 16px;
+}
+
+.top-nav__div:last-child {
+    margin-right: 16px;
+}
+
+.top-nav__logo {
+    width: 96px;
+    margin-right: 16px;
+}
+
+.top-nav__divider {
+    height: 32px;
+    margin-right: 16px;
+}
+
+@media screen and (max-width: 550px) {
+    .top-nav__div_hidden {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 551px) {
+    .top-nav__div_hidden {
+        display: flex;
+    }
+}
+
+.main-page {
+    height: 510px;
+    background-color: #F8F8F8;
+}
+
+.main-section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-section__title {
+    min-height: 40px;
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.main-section__h1 {
+    margin: 0;
+    margin-left: 16px;
+    font-size: 28px;
+}
+
+.main-section__slide {
+    margin-top: 24px;
+    margin-left: 20px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    overflow: auto;
+}
+
+.main-section__btn {
+    white-space: nowrap;
+    margin: 0;
+    margin-right: 10px;
+    padding: 8px 12px;
+}
+
+.main-section__btn_active {
+    background-color: #FFFFFF;
+    border: 2px solid #B8FFEC;
+    border-radius: 10px;
+}
+
+.main-section_description {
+    display: flex;
+    height: 320px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-section__text {
+    margin: 24px;
+    font-size: 14px;
+    max-height: 90px;
+    overflow: hidden;
+}
+
+.main-section__readmore {
+    height: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.main-section__icon {
+    margin-left: 16px;
+}
+
+.main-section__h3 {
+    margin: 0;
+    margin-left: 8px;
+}
+
+.main-section__img {
+    max-height: 170px;
+    margin: 24px;
+    object-fit: contain;
+}
+
+@media screen and (min-width: 551px) {
+    .main-section_description {
+        flex-wrap: nowrap;
+        justify-content: stretch;
+    }
+
+    .main-section__text {
+        max-height: 150px;
+    }
+
+    .main-section__img {
+        max-width: 50%;
+        max-height: 300px;
+    }
+}
